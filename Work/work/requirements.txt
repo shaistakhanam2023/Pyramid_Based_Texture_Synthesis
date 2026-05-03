@@ -1,0 +1,7 @@
+numpy>=1.20
+scipy>=1.7
+pillow>=8.0
+matplotlib>=3.4
+scikit-image>=0.18
+pytest>=6.0
+tqdm>=4.60

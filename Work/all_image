@@ -1,0 +1,15 @@
+def get_next_filename(input_path, output_dir):
+    import os
+
+    # Extract base name from input (e.g., pink_wall.png → pink_wall)
+    base_name = os.path.splitext(os.path.basename(input_path))[0]
+
+    i = 1
+    while True:
+        new_filename = f"{base_name}_{i}.png"
+        new_path = os.path.join(output_dir, new_filename)
+
+        if not os.path.exists(new_path):
+            return new_path
+
+        i += 1
